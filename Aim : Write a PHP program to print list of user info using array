@@ -1,0 +1,25 @@
+<?php 
+// Define a multidimensional array 
+$users = array( 
+    array( 
+        "name" => "Peter Parker", 
+        "email" => "peterparker@mail.com", 
+    ), 
+    array( 
+        "name" => "Clark Kent", 
+        "email" => "clarkkent@mail.com", 
+    ), 
+    array( 
+        "name" => "Harry Potter", 
+        "email" => "harrypotter@mail.com", 
+    ) 
+); 
+// Access nested value 
+echo "Peter Parker's Email-id is: " . $users[0]["email"] . "<br>"; 
+echo "Clark Kent's Email-id is: " . $users[1]["email"] . "<br>";
+echo "Harry Potter's Email-id is: " . $users[2]["email"] . "<br>"; 
+?>
+Output:
+Peter Parker's Email-id is: peterparker@mail.com
+Clark Kent's Email-id is: clarkkent@mail.com
+Harry Potter's Email-id is: harrypotter@mail.com
