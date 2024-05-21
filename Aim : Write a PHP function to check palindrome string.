@@ -1,0 +1,25 @@
+<?php
+// Function to check if a string is a palindrome
+function isPalindrome($str) {
+    // Get the length of the string
+    $len = strlen($str);
+    // Loop through the string
+    for ($i = 0; $i < $len / 2; $i++) {
+        // Compare characters from the beginning and end of the string
+        // If they're not equal, it's not a palindrome
+        if ($str[$i] != $str[$len - $i - 1]) {
+            return false; // It's not a palindrome
+        }
+    }
+    return true; // It's a palindrome
+}
+// Implicit string provided by the coder
+$string = "html";
+// Check if the string is a palindrome
+if (isPalindrome($string)) {
+    echo "Palindrome";
+} else {
+    echo "$string"." is Not a Palindrome";
+}
+?>
+Output :     html is Not a Palindrome
