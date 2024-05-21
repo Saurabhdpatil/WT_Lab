@@ -1,0 +1,18 @@
+<?php
+$text = "Shri Vile Parle Kelavani Institute Mandal Institute of Technology";
+$search_char = "r";
+$count = "0";
+
+for($x="0"; $x<strlen($text) ; $x++){
+   if(substr($text,$x,1) == $search_char){
+      $count = $count + 1;
+   }
+}
+echo "Input string : "."$text"."<br>";
+echo $search_char." appears ".$count." times"."\n";
+?>
+
+Output:
+
+Input string : Shri Vile Parle Kelavani Institute Mandal Institute of Technology
+r appears 2 times
